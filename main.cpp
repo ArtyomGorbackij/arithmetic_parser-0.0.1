@@ -19,8 +19,7 @@ int a,b,c;
             cout << (c);
             break;
         case '/':
-            c = a / b;
-            cout << (c);
+            cout << (double)a/b;
             break;
         case '%':
             c = a % b;
