@@ -1,51 +1,22 @@
 #include <iostream>
+using namespace std;
 int main() {
-    using namespace std;
-int a,b,c;
-  char f;
+int a,b;
+char f,g;
 
     cin >> a>>f>>b;
-    switch (f) {
-        case '+':
-            c = a + b;
-            cout << (c);
-            break;
-        case '-':
-            c = a - b;
-            cout << (c);
-            break;
-        case '*':
-            c = a * b;
-            cout << (c);
-            break;
-        case '/':
-            cout << (double)a/b;
-            break;
-        case '%':
-            c = a % b;
-            cout << (c);
-            break;
-        case '&':
-            c = a & b;
-            cout << (c);
-            break;
-        case '|':
-            c = a | b;
-            cout << (c);
-            break;
-        case '^':
-            c = a ^ b;
-            cout << (c);
-            break;
-        case '<':
-            c = a << b;
-            cout << (c);
-             break;
-        case '>':
-            c = a >> b;
-            cout << (c);
-            break;
-    }
+    if (f == '+'){cout<<a+b;}
+    else if (f== '-'){cout<<a-b;}
+    else if (f== '/'){cout<<(double)a/b;}
+    else if (f== '*'){cout<<a*b;}
+    else if (f== '%'){cout<<a%b;}
+    else if (f== '|'){cout<<(a|b);}
+    else if (f== '^'){cout<<(a^b);}
+    else if (f== '&'){cout<<(a&b);}
+    else if (f== '>'){cin>>g;
+    if (f==g){cout<<(a>>b);}}
+    else if (f== '<'){{cin>>g;
+    if (f==g){cout<<(a<<b);}}}
             return 0;
 
 }
